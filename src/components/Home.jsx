@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
-import { db } from "../firebase-config";
+import { db, auth } from "../firebase-config";
 import Typewriter from "typewriter-effect";
 import { AiFillDelete } from "react-icons/ai";
 
 import "../styles/home.scss";
 
-const Home = () => {
+const Home = ({ isAuth }) => {
   const [postLists, setPost] = useState([]);
 
   const postsCollecion = collection(db, "posts");
@@ -55,13 +55,15 @@ const Home = () => {
                 <h1>{post.title}</h1>
               </div>
               <div className="delete">
-                <button
-                  onClick={() => {
-                    deletePost(post.id);
-                  }}
-                >
-                  <AiFillDelete />
-                </button>
+                {isAuth && post.author.id === auth.currentUser.uid && (
+                  <button
+                    onClick={() => {
+                      deletePost(post.id);
+                    }}
+                  >
+                    <AiFillDelete />
+                  </button>
+                )}
               </div>
             </div>
             <div className="texts">

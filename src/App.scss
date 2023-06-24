@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif, "Open Sans", "Poppins", "Fauna One",
+    serif, "Cinzel";
+  background: #ffffff;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+  background-color: #15181a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   color: white;
+  a {
+    color: white;
+  }
+  .logo {
+    margin: 2rem;
+  }
+  .links {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+  }
+}

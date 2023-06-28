@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
+import HomeCarousel from "./Carousel";
 import Typewriter from "typewriter-effect";
 import { AiFillDelete } from "react-icons/ai";
 
@@ -41,12 +42,14 @@ const Home = ({ isAuth }) => {
           }}
         />
       </h1>
-      <div className="header">
+
+      <HomeCarousel />
+      {/* <div className="header">
         <img
           src="https://unsplash.com/photos/QLqNalPe0RA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTJ8fHdyaXRlciUyMHdyaXRpbmd8ZW58MHx8fHwxNjg3MzkxODUyfDA&force=true"
           alt=""
         />
-      </div>
+      </div> */}
       {postLists.map((post) => {
         return (
           <div className="posts">

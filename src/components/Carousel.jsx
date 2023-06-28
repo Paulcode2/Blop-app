@@ -28,7 +28,7 @@ const HomeCarousel = () => {
             position: "absolute",
             top: "50%",
             left: "0",
-            color: "white",
+            color: "black",
             padding: "5px",
             zIndex: "10",
           }}
@@ -43,7 +43,7 @@ const HomeCarousel = () => {
             position: "absolute",
             top: "50%",
             right: "0",
-            color: "white",
+            color: "black",
             padding: "5px",
             zIndex: "10",
           }}

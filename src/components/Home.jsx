@@ -16,10 +16,12 @@ const Home = ({ isAuth }) => {
     const getPosts = async () => {
       const postsData = await getDocs(postsCollecion);
       setPost(postsData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      // console.log(postsData)
     };
-
     getPosts();
-  });
+  }, []);
+
+ 
 
   const deletePost = async (id) => {
     const postDoc = doc(db, "posts", id);
@@ -52,7 +54,8 @@ const Home = ({ isAuth }) => {
       </div> */}
       {postLists.map((post) => {
         return (
-          <div className="posts">
+          <div className="post_con">
+            <div className="posts">
             <div className="title">
               <div className="header">
                 <h1>{post.title}</h1>
@@ -73,6 +76,7 @@ const Home = ({ isAuth }) => {
               <div className="textsCon">{post.postText}</div>
             </div>
             <h3>Author: {post.author.name}</h3>
+          </div>
           </div>
         );
       })}

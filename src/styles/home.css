@@ -20,6 +20,11 @@
     width: 90vw;
   }
 }
+.home .post_con {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
 .home .posts {
   border-radius: 15px;
   padding: 2rem;

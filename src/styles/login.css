@@ -12,9 +12,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  background: #ffffff;
+  background: transparent;
   box-shadow: 0px 22px 35px rgba(0, 0, 0, 0.08);
   padding: 1rem;
+  border: 1px solid rgb(54, 53, 53);
+  box-sizing: border-box;
   border-radius: 10px;
   height: auto;
 }
@@ -25,7 +27,6 @@
 }
 .login p {
   font-family: "Fauna One";
-  color: rgba(255, 0, 0, 0.08) !important;
 }
 .login .login-btn {
   width: 2rem;

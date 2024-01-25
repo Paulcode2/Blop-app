@@ -4,6 +4,7 @@ import { db, auth } from "../firebase-config";
 import HomeCarousel from "./Carousel";
 import Typewriter from "typewriter-effect";
 import { AiFillDelete } from "react-icons/ai";
+// import {firebase}
 
 import "../styles/home.scss";
 
@@ -37,24 +38,67 @@ const Home = ({ isAuth }) => {
             delay: 100,
             strings: [
               "Welcome to Flash blog!",
-              "Having troubles dropping infos",
-              "Here's a solution!",
-              "Login, create your posts and share!",
+              "Drop Trending and latest gists with ease!",
+              // "Here's a solution!",
+              // "Login, create your posts and share!",
             ],
           }}
         />
       </h1>
 
       <HomeCarousel />
-      {/* <div className="header">
-        <img
-          src="https://unsplash.com/photos/QLqNalPe0RA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTJ8fHdyaXRlciUyMHdyaXRpbmd8ZW58MHx8fHwxNjg3MzkxODUyfDA&force=true"
-          alt=""
-        />
-      </div> */}
+      {/* Testing */}
+        {/* <div className="post_con">
+            <div className="posts">
+            <div className="title">
+              <div className="header">
+                <h1>Crypto Tips</h1>
+              </div>
+              <div className="delete">
+                {isAuth && post.author.id === auth.currentUser.uid && (
+                  <button
+                    onClick={() => {
+                      deletePost(post.id);
+                    }}
+                  >
+                    <AiFillDelete />
+                  </button>
+                )}
+              </div>
+            </div>
+            <div className="texts">
+              <div className="textsCon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore beatae quaerat, voluptate numquam debitis magni possimus, iure repudiandae a iste labore nemo impedit nulla quibusdam at architecto deleniti dolores!</div>
+            </div>
+            <h3>Author: Paul Levites</h3>
+          </div>
+          <div className="posts">
+            <div className="title">
+              <div className="header">
+                <h1>Crypto Tips</h1>
+              </div>
+              <div className="delete">
+                {isAuth && post.author.id === auth.currentUser.uid && (
+                  <button
+                    onClick={() => {
+                      deletePost(post.id);
+                    }}
+                  >
+                    <AiFillDelete />
+                  </button>
+                )}
+              </div>
+            </div>
+            <div className="texts">
+              <div className="textsCon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore beatae quaerat, voluptate numquam debitis magni possimus, iure repudiandae a iste labore nemo impedit nulla quibusdam at architecto deleniti dolores!</div>
+            </div>
+            <h3>Author: Paul Levites</h3>
+          </div>
+          </div> */}
+      
       {postLists.map((post) => {
         return (
           <div className="post_con">
+            
             <div className="posts">
             <div className="title">
               <div className="header">
@@ -78,8 +122,8 @@ const Home = ({ isAuth }) => {
             <h3>Author: {post.author.name}</h3>
           </div>
           </div>
-        );
-      })}
+         );
+      })} 
     </div>
   );
 };

@@ -1,0 +1,97 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: 4rem 1rem;
+}
+.post h1 {
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .post h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+.post .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 22px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10% 8%;
+}
+.post .container .input input {
+  width: 100%;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  outline: black;
+}
+.post .container .input input::-moz-placeholder {
+  color: rgb(174, 175, 175);
+  text-align: center;
+}
+.post .container .input input::placeholder {
+  color: rgb(174, 175, 175);
+  text-align: center;
+}
+.post .container .input label {
+  font-family: "Cinzel", sans-serif;
+}
+.post .container .textarea {
+  display: flex;
+  flex-direction: column;
+}
+.post .container .textarea textarea {
+  width: 28rem;
+  height: 200px;
+  font-size: 1.1rem;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  outline: black;
+}
+.post .container .textarea textarea::-moz-placeholder {
+  color: rgb(174, 175, 175);
+  text-align: center;
+}
+.post .container .textarea textarea::placeholder {
+  color: rgb(174, 175, 175);
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .post .container .textarea textarea {
+    width: 15rem;
+  }
+}
+.post .container .textarea label {
+  font-family: "Cinzel", sans-serif;
+}
+.post .container button {
+  background-color: #5abbf8;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+.post .container button:hover {
+  background-color: white;
+  color: #5d5b8d;
+  transition: all 0.4s ease-in-out;
+}/*# sourceMappingURL=post.css.map */

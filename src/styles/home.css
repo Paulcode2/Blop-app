@@ -1,0 +1,41 @@
+.home {
+  margin: 1rem;
+  height: auto;
+}
+.home h1 {
+  font-family: "Fauna One";
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .home h1 {
+    font-size: 1rem;
+  }
+}
+.home .header img {
+  width: 40vw;
+  height: 80vh;
+}
+@media screen and (max-width: 480px) {
+  .home .header img {
+    width: 90vw;
+  }
+}
+.home .posts {
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 20px;
+  border: 2px solid rgb(65, 63, 63);
+  background: black;
+}
+@media screen and (max-width: 480px) {
+  .home .posts {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home .posts h3 {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-family: "Fauna One";
+  }
+}/*# sourceMappingURL=home.css.map */

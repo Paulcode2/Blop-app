@@ -26,6 +26,7 @@ function App() {
     <Router>
 
       <nav>
+        <div className='nav'>
         <div className="logo">
         <Link to="/">
           Flash Blog
@@ -45,6 +46,7 @@ function App() {
         )}
 
         
+        </div>
         </div>
       </nav>
       <Routes>

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0px 22px 35px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  border-radius: 10px;
+  height: auto;
+}
+@media screen and (max-width: 480px) {
+  .login {
+    left: 23%;
+  }
+}
+.login p {
+  font-family: "Fauna One";
+  color: rgba(255, 0, 0, 0.08) !important;
+}
+.login .login-btn {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+.login .login-btn:hover {
+  background-color: grey;
+  transition: all 0.4s ease-in-out;
+}/*# sourceMappingURL=login.css.map */
